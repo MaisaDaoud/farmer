@@ -21,7 +21,7 @@ y[y>= 4] = 1
 X = df.to_numpy()
 X = preprocessing.scale(X) # Is standard
 # Impute NaNs
-
+print("start ...")
 imp = SimpleImputer(missing_values=np.nan, strategy='mean')
 imp.fit(X)
 X = imp.transform(X)
